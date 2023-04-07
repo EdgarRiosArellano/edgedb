@@ -733,6 +733,13 @@ class TestSQL(tb.SQLQueryTestCase):
         AND    relkind in ('r', 'm', 'v', 't', 'f', 'p')
         ''')
 
+    async def test_sql_query_static_eval_03(self):
+        await self.scon.execute('''
+        SELECT information_schema._pg_truetypid(a.*, t.*)
+        FROM pg_attribute a
+        JOIN pg_type t ON t.oid = a.atttypid
+        ''')
+
     async def test_sql_query_be_state(self):
         con = await self.connect(database=self.con.dbname)
         try:
