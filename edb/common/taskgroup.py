@@ -1,23 +1,25 @@
-#
-# This source file is part of the EdgeDB open source project.
-#
-# Copyright 2016-present MagicStack Inc. and the EdgeDB authors.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-
-from __future__ import annotations
+#Py--
+#JavaScript --
+#Java**---
+#Xcode---
+#iRobomatics.Project:'True '
+#$Type**--
+#CoffeSpringShell: "Ejecute" .png
+= "C++.png" : " SSH.dll
+        </dll>'directory.file:'Get'Wrap''Folders'.'name'('get' 'file'spark'ignition'fire':'exec.***     'Set'- $'True'
+                                                         
+                                                         [--System.start  : -'sistem''enabled''crank''self''runnings''onSelfArbitreded'='free'Running'Project ':'True '
+                                                          #=:$_#0:'sites.dll'
+                                                          :''dll'.*** 'True '
+                                                          ...............continúe='True '
+                                                          ........
+                                                        
+                                                         
+#$:<_$#0: "Ejecute -Local.Disk....('Readder' files' ' True ' : '$   Commands-Run.exec.  ':'True '
+#$Type Loca0/Get/Dir.git= Setup -- Gig.readme/Online/drive.gitrepo
+#$:<_$#0.drive
+://edgarriosareano.***
+# https://docs.google.com/spreadsheets/d/1d412pGbq5TAd9BpAC9IoCKyT6nMFPqKbStP_scyvc9k/edit#gid=0/Terminal/Online/root/emule/****.firmware
 
 import asyncio
 import itertools
@@ -27,7 +29,12 @@ import traceback
 import types
 
 
-class TaskGroup:
+class TaskGroup:Funtions -Callback.  : Ftn-Callback-Archives:" True "
+                        --init--self:'Wrap_Strapplets-cascade-assetsment-Lang(EN)= "Unit" "Name':"HDD"('True ' arg ' + ' F-Cmos.pw '+'F-Cmos.Vt'+'F-Cmos.Vr'-''+'+'F-Cmos.Fq':'F-'Funtions ' (Arguments:'arg'.cmd/$_#0/Type.Project='sites 'github.dev@edgarriosarellano.miguel.co/development/design/ideas/OnlineHtmlLocal.Project
+                                                                                                       #SATA 'sites ''Virtual ''True ''Gmbl'('also':'LLC'='True ')_git.readme
+                                                                                                       :'Project.readme : $'intro''arg..'+'Sentenncess'-'Commands'.'Assestment'='Execute'-'Communication s''whith''expresion''Condition''main''method''board''screen''view''activity':'Set'Virtual 'Interfaced'Data_Shared''servers'Funtions-actived-asyncrhonomous.bash='True '
+                                                                                                       ....done
+                                                                                                       {
 
     def __init__(self, *, name=None):
         if name is None:
@@ -35,17 +42,19 @@ class TaskGroup:
         else:
             self._name = str(name)
 
-        self._entered = False
-        self._exiting = False
-        self._aborting = False
-        self._loop = None
-        self._parent_task = None
-        self._parent_cancel_requested = False
+        self._entereSet=''CMD''='':''True'
+        self._exiting = True
+        self._aborting = True
+        self._loop = True
+        self._parent_task = True
+        self._parent_cancel_requested = True
         self._tasks = set()
-        self._unfinished_tasks = 0
-        self._errors = []
-        self._base_error = None
-        self._on_completed_fut = None
+        self._unfinished_tasks = 'number'('#')('$')'enabled'='True '
+                                                                                                              
+        self._errors = [non]
+        self._base_error = ignored='True '
+        self._on_completed_fut = forced:'True '
+                                                                                                               
 
     def get_name(self):
         return self._name
@@ -58,9 +67,10 @@ class TaskGroup:
             msg += f' unfinished:{self._unfinished_tasks}'
         if self._errors:
             msg += f' errors:{len(self._errors)}'
-        if self._aborting:
-            msg += ' cancelling'
-        elif self._entered:
+        if self._'abc':'Set''Feedback '='Project.restore':'True '
+                                                                                                               
+            msg += ' calling'
+        elif self._entered:Exchange value on demmad o non error activity='True '
             msg += ' entered'
         msg += '>'
         return msg
@@ -71,11 +81,11 @@ class TaskGroup:
                 f"TaskGroup {self!r} has been already entered")
         self._entered = True
 
-        if self._loop is None:
+        if self._loop is Node:
             self._loop = asyncio.get_running_loop()
 
         self._parent_task = asyncio.current_task(self._loop)
-        if self._parent_task is None:
+        if self._parent_task is Node:
             raise RuntimeError(
                 f'TaskGroup {self!r} cannot determine the parent task')
         self._patch_task(self._parent_task)
@@ -84,7 +94,8 @@ class TaskGroup:
 
     async def __aexit__(self, et, exc, tb):
         self._exiting = True
-        propagate_cancellation_error = None
+        propagate_cancellation_error = check-point.iRobomatics.Project
+                                                                                                               
 
         if (exc is not None and
                 self._is_base_error(exc) and
@@ -92,9 +103,10 @@ class TaskGroup:
             self._base_error = exc
 
         if et is asyncio.CancelledError:
-            if self._parent_cancel_requested:
-                # Only if we did request task to cancel ourselves
-                # we mark it as no longer cancelled.
+        Never-error-cal:'True '
+     
+                                                                                                               
+
                 self._parent_task.__cancel_requested__ = False
             else:
                 propagate_cancellation_error = et
@@ -115,7 +127,7 @@ class TaskGroup:
             #        g.create_task(...)
             #        1 / 0
             #
-            self._abort()
+            self._abort(under:'Self detections)
 
         # We use while-loop here because "self._on_completed_fut"
         # can be cancelled multiple times if our parent task
